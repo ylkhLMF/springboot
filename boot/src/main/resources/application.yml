@@ -1,0 +1,8 @@
+spring:
+  datasource:
+#    8.0后驱动名加上cj
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+#      mysql8.0版本的使用的数据库连接字符串不一样，而且还对时区有要求
+    url: jdbc:mysql://localhost:3306/vhr?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
